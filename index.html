@@ -20,10 +20,14 @@
         <p>Hello fellow shoppers! We're currently building our new fashion store. 
           Add your email below to stay up-to-date with announcements and our launch deals.
         </p>
-        <form action="/action_page.php" method="post">
-          <input type="email" value="Email Address" placeholder="Email Address" required>
-          <input type="submit" value=">" class="slide">
-        </form>
+        <div class="email">
+          <form action="#" method="post">
+            <input type="email" placeholder="Email Address" id="emailvalue">
+            <img class="error-icon hide" src="/images/icon-error.svg" alt="error icon">
+            <p class="error hide" id="errormessage">Please provide a valid email</p>
+            <input type="submit" value=">" class="slide">
+          </form>
+        </div>
       </div>
     </div>
 
@@ -39,6 +43,6 @@
     </p>
   </footer>
 
-  <script src="main.js"></script>
+  <script src="/main.js"></script>
 </body>
 </html>

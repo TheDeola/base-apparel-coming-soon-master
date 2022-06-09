@@ -13,46 +13,48 @@ body {
 }
 .container {
     display: flex;
-    margin: 100px auto;
+    margin: auto;
     padding: auto;
-    width: 850px;
-    height: 450px;
+    width: 100vw;
+    height: 100vh;
     border: .5px solid hsl(0, 36%, 95%);
     background: url(/images/bg-pattern-desktop.svg);               
 }
 .left {
     padding-top: 30px;
-    padding-left: 80px;
+    padding-left: 100px;
 }
 .left .light {
     font-weight: 300;
+    font-size: 60px;
     color: hsl(0, 36%, 70%);
     letter-spacing: 15px;
 }
 .left .bold {
     font-weight: 700;
+    font-size: 60px;
     letter-spacing: 15px;
 }
 .left p {
     color: hsl(0, 36%, 70%);
     line-height: 20px;
-    margin-right: 150px;
-    font-size: x-small;
+    margin-right: 35%;
+    font-size: large;
 }
 .left img[src] {
-    margin-bottom: 70px;
+    margin-bottom: 150px;
     width: 90px;
 }
 .right img[src] {
-    width: 350px;
-    height: 450px;
+    width: 43vw;
+    height: 100vh;
 }
 input {
     border:1px solid hsl(0, 36%, 70%);
     color: hsl(0, 36%, 70%);
     padding: 10px;
-    margin-top: 20px;
-    padding-right: 70px;
+    margin-top: 40px;
+    padding-right: 170px;
     border-radius: 25px;
     font-size: small;
 }
@@ -66,13 +68,24 @@ input:hover {
     /* background: hsl(0, 66%, 83%); */
     background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
     padding: 10px;
-    margin-left: -35px;
+    margin-left: -40px;
     padding-left: 30px;
     padding-right: 30px;
     border-radius: 25px;
 }
 .slide:hover {
     background-image: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 93%, 68%));
+}
+.error-icon{
+    position: absolute;
+    top: 10px;
+    right: 80px;
+}
+.hide{
+    display: none;
+}
+.error-border {
+    border-color: red;
 }
 .attribution { 
     font-size: 11px; 
@@ -84,7 +97,7 @@ input:hover {
 
 /* Responsiveness Starts Here */
 
-@media (max-width: 700px) {
+@media (max-width: 768px) {
     .container {
         margin: 0;
         padding: 0 auto;

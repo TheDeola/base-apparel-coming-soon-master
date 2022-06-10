@@ -19,11 +19,14 @@ function isEmail(email) {
 function checkInput() {
     const emailValue = email.value;
     if (emailValue ===''){
-        setError(email, 'email cannot be blank')
+        setError(email, 'email cannot be blank');
+	   
     } 
     
     else if(!isEmail(emailValue)) {
-        setError(email, 'please provide a valid email')
+        setError(email, 'please provide a valid email');
+	const formControl = input.parentElement;
+        formControl.className = 'form-control error';
     }
 
     else {

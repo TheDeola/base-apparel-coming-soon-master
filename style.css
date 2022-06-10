@@ -66,7 +66,7 @@ input:hover {
     /* background: hsl(0, 66%, 83%); */
     background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
     padding: 10px;
-    margin-left: -35px;
+    margin-left: 5px;
     padding-left: 30px;
     padding-right: 30px;
     border-radius: 25px;
@@ -81,6 +81,42 @@ input:hover {
 .attribution a { 
     color: hsl(228, 45%, 44%); 
 }
+
+/*I ADDED THIS PART TO THE CSS*/
+
+.form-control > i{
+    margin-left:-45px;
+    align-items: center;
+    visibility: hidden;
+}
+.form-control small{
+    visibility: hidden;
+    /* position: absolute;
+    bottom:0; 
+    left: 0; */
+}
+.form-control.error input:first-child{
+    border-color: red;
+
+}
+
+.form-control.error i.fa-exclamation-circle{ 
+    color:red;
+    visibility:visible
+}
+.form-control.error small{
+    visibility: visible;
+    color: red;
+}
+
+.form-control.success small{
+    visibility: none;
+}
+.form-control.success input :first-child{
+    border-color: green;
+
+}
+
 
 /* Responsiveness Starts Here */
 
